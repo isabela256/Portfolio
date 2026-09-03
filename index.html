@@ -1,1 +1,160 @@
-placeholder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isabela Arteaga — Portfolio</title>
+<meta name="description" content="Isabela Arteaga — Cybersecurity & Software Engineering student at WPI. iOS development, automation, and internship search tooling.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="#top" class="brand">Isabela Arteaga</a>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#activity">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="top" class="hero">
+    <div class="avatar" aria-hidden="true">IA</div>
+    <h1>Isabela Arteaga</h1>
+    <p class="tagline">BS Cybersecurity @ WPI · iOS Developer · Software Engineering</p>
+    <p class="location">Worcester, MA · originally from Quito, Ecuador</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:isabelamaria.arteaga@gmail.com">Get in touch</a>
+      <a class="btn" href="https://github.com/isabela256" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/isabela-maria-arteaga" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      I'm a junior at Worcester Polytechnic Institute studying Cybersecurity (transferred from
+      Fairfield University, where I studied Computer Science with a minor in Mathematics).
+      I build things at the intersection of security, software, and design — from a SwiftUI
+      social app to a self-hosted automation system that runs a local LLM to help with my own
+      internship search. Native Spanish speaker, fluent in English, and always looking for the
+      next project to dig into.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <article class="card">
+        <h3>Second Brain: Internship Monitor</h3>
+        <p class="card-meta">2026 · Python, Docker, Ollama (Llama 3.2), SearXNG, Gmail API</p>
+        <p>
+          A self-hosted automation stack that runs continuously on my own machine: it searches
+          for internships matching my profile, validates every listing is real and current by
+          scraping and classifying it with a locally-run LLM, tracks my applications in SQLite,
+          scans Gmail for substantive replies, and sends me a daily digest — all without relying
+          on any third-party cloud AI service.
+        </p>
+        <a class="card-link" href="https://github.com/isabela256/isa-personal" target="_blank" rel="noopener">View repo →</a>
+      </article>
+
+      <article class="card">
+        <h3>CRU — Social Networking iOS App</h3>
+        <p class="card-meta">Aug – Dec 2025 · Swift, SwiftUI, Core Data, REST APIs</p>
+        <p>
+          Student founder and iOS developer on a social-networking app built from scratch in
+          SwiftUI. Built custom UI components and animated transitions, designed the
+          interest-based "circles" and the Vibe Explorer feature (compatibility checks, mood
+          tracking), and integrated Music and Strava APIs.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>FUSA Treasury — Financial Analysis</h3>
+        <p class="card-meta">Oct – Dec 2025 · Excel, budgeting, financial reporting</p>
+        <p>
+          Treasurer intern for Fairfield University's student government. Applied advanced Excel
+          functions to support budgeting and prepared financial data used directly in Treasury
+          decision-making.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Ekos — Editorial & Events</h3>
+        <p class="card-meta">Jul 2025 · Editorial, event coordination, Quito, Ecuador</p>
+        <p>
+          Supported editorial projects for Ekos' sustainability summit — preparing and publishing
+          content to the online magazine — and coordinated corporate forum events.
+        </p>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience &amp; Leadership</h2>
+    <ul class="timeline">
+      <li><span class="t-date">Sep 2024 – May 2025</span> Diversity Recruitment Ambassador, Fairfield University — mentored newly admitted students and led outreach events.</li>
+      <li><span class="t-date">Apr – Dec 2025</span> New Student Leader, Office of Student Engagement — mentored 20 first-year students, taught the First Year Experience course.</li>
+      <li><span class="t-date">Jun – Jul 2023</span> Intern, Kruger Corporation (Quito) — agile workflows, Jira/HubSpot task management.</li>
+      <li><span class="t-date">2022 – 2024</span> Volunteer, Foundation Lagartococha — 150+ hours building schools and delivering educational resources in the Amazon rainforest.</li>
+      <li><span class="t-date">2022 – 2023</span> Volunteer, Fundación Alas de Colibrí — 80+ hours supporting survivors of trafficking and abuse.</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="tags">
+      <span class="tag">Swift</span>
+      <span class="tag">SwiftUI</span>
+      <span class="tag">Python</span>
+      <span class="tag">Git / GitHub</span>
+      <span class="tag">Core Data</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">Docker</span>
+      <span class="tag">UI/UX Design</span>
+      <span class="tag">Cybersecurity Fundamentals</span>
+      <span class="tag">Data Structures &amp; Algorithms</span>
+    </div>
+    <h3 class="sub-h">Languages</h3>
+    <div class="tags">
+      <span class="tag">Spanish (Native)</span>
+      <span class="tag">English (Fluent)</span>
+      <span class="tag">French (A2)</span>
+      <span class="tag">Portuguese (Basic)</span>
+    </div>
+  </section>
+
+  <section id="activity" class="section">
+    <h2>Recent GitHub Activity</h2>
+    <p class="section-sub">Pulled live from the GitHub API — always current.</p>
+    <ul id="repo-list" class="repo-list">
+      <li class="repo-loading">Loading recent repositories…</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Always open to internship opportunities and interesting projects.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:isabelamaria.arteaga@gmail.com">isabelamaria.arteaga@gmail.com</a>
+      <a class="btn" href="https://github.com/isabela256" target="_blank" rel="noopener">github.com/isabela256</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Isabela Arteaga</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
