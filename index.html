@@ -5,14 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Isabela Arteaga — Portfolio</title>
 <meta name="description" content="Isabela Arteaga — Cybersecurity & Software Engineering student at WPI. iOS development, automation, and internship search tooling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
+<div class="bg-glow" aria-hidden="true"></div>
+
+<header id="navbar" class="site-header">
   <nav class="nav">
     <a href="#top" class="brand">Isabela Arteaga</a>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -26,9 +30,9 @@
 
 <main>
   <section id="top" class="hero">
-    <div class="avatar" aria-hidden="true">IA</div>
+    <p class="eyebrow">Cybersecurity &amp; Software Engineering</p>
     <h1>Isabela Arteaga</h1>
-    <p class="tagline">BS Cybersecurity @ WPI · iOS Developer · Software Engineering</p>
+    <p class="tagline">BS Cybersecurity @ WPI · iOS Developer · Building things that run on their own</p>
     <p class="location">Worcester, MA · originally from Quito, Ecuador</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:isabelamaria.arteaga@gmail.com">Get in touch</a>
@@ -37,9 +41,30 @@
     </div>
   </section>
 
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span class="marquee-item">Swift</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">SwiftUI</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Python</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Docker</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">REST APIs</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Cybersecurity</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Git / GitHub</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Swift</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">SwiftUI</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Python</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Docker</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">REST APIs</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Cybersecurity</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">Git / GitHub</span><span class="marquee-dot">·</span>
+      <span class="marquee-item">UI/UX Design</span><span class="marquee-dot">·</span>
+    </div>
+  </div>
+
   <section id="about" class="section">
-    <h2>About</h2>
-    <p>
+    <p class="section-label">01 — About</p>
+    <p class="section-lead">
       I'm a junior at Worcester Polytechnic Institute studying Cybersecurity (transferred from
       Fairfield University, where I studied Computer Science with a minor in Mathematics).
       I build things at the intersection of security, software, and design — from a SwiftUI
@@ -50,57 +75,69 @@
   </section>
 
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <p class="section-label">02 — Projects</p>
     <div class="grid">
 
       <article class="card">
-        <h3>Second Brain: Internship Monitor</h3>
-        <p class="card-meta">2026 · Python, Docker, Ollama (Llama 3.2), SearXNG, Gmail API</p>
-        <p>
-          A self-hosted automation stack that runs continuously on my own machine: it searches
-          for internships matching my profile, validates every listing is real and current by
-          scraping and classifying it with a locally-run LLM, tracks my applications in SQLite,
-          scans Gmail for substantive replies, and sends me a daily digest — all without relying
-          on any third-party cloud AI service.
-        </p>
-        <a class="card-link" href="https://github.com/isabela256/Second-Brain" target="_blank" rel="noopener">View repo →</a>
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="card-inner">
+          <h3>Second Brain: Internship Monitor</h3>
+          <p class="card-meta">2026 · Python, Docker, Ollama (Llama 3.2), SearXNG, Gmail API</p>
+          <p>
+            A self-hosted automation stack that runs continuously on my own machine: it searches
+            for internships matching my profile, validates every listing is real and current by
+            scraping and classifying it with a locally-run LLM, tracks my applications in SQLite,
+            scans Gmail for substantive replies, and sends me a daily digest — all without relying
+            on any third-party cloud AI service.
+          </p>
+          <a class="card-link" href="https://github.com/isabela256/Second-Brain" target="_blank" rel="noopener">View repo <span class="arrow">→</span></a>
+        </div>
       </article>
 
       <article class="card">
-        <h3>CRU — Social Networking iOS App</h3>
-        <p class="card-meta">Aug – Dec 2025 · Swift, SwiftUI, Core Data, REST APIs</p>
-        <p>
-          Student founder and iOS developer on a social-networking app built from scratch in
-          SwiftUI. Built custom UI components and animated transitions, designed the
-          interest-based "circles" and the Vibe Explorer feature (compatibility checks, mood
-          tracking), and integrated Music and Strava APIs.
-        </p>
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="card-inner">
+          <h3>CRU — Social Networking iOS App</h3>
+          <p class="card-meta">Aug – Dec 2025 · Swift, SwiftUI, Core Data, REST APIs</p>
+          <p>
+            Student founder and iOS developer on a social-networking app built from scratch in
+            SwiftUI. Built custom UI components and animated transitions, designed the
+            interest-based "circles" and the Vibe Explorer feature (compatibility checks, mood
+            tracking), and integrated Music and Strava APIs.
+          </p>
+        </div>
       </article>
 
       <article class="card">
-        <h3>FUSA Treasury — Financial Analysis</h3>
-        <p class="card-meta">Oct – Dec 2025 · Excel, budgeting, financial reporting</p>
-        <p>
-          Treasurer intern for Fairfield University's student government. Applied advanced Excel
-          functions to support budgeting and prepared financial data used directly in Treasury
-          decision-making.
-        </p>
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="card-inner">
+          <h3>FUSA Treasury — Financial Analysis</h3>
+          <p class="card-meta">Oct – Dec 2025 · Excel, budgeting, financial reporting</p>
+          <p>
+            Treasurer intern for Fairfield University's student government. Applied advanced Excel
+            functions to support budgeting and prepared financial data used directly in Treasury
+            decision-making.
+          </p>
+        </div>
       </article>
 
       <article class="card">
-        <h3>Ekos — Editorial & Events</h3>
-        <p class="card-meta">Jul 2025 · Editorial, event coordination, Quito, Ecuador</p>
-        <p>
-          Supported editorial projects for Ekos' sustainability summit — preparing and publishing
-          content to the online magazine — and coordinated corporate forum events.
-        </p>
+        <div class="card-glow" aria-hidden="true"></div>
+        <div class="card-inner">
+          <h3>Ekos — Editorial &amp; Events</h3>
+          <p class="card-meta">Jul 2025 · Editorial, event coordination, Quito, Ecuador</p>
+          <p>
+            Supported editorial projects for Ekos' sustainability summit — preparing and publishing
+            content to the online magazine — and coordinated corporate forum events.
+          </p>
+        </div>
       </article>
 
     </div>
   </section>
 
   <section id="experience" class="section">
-    <h2>Experience &amp; Leadership</h2>
+    <p class="section-label">03 — Experience &amp; Leadership</p>
     <ul class="timeline">
       <li><span class="t-date">Sep 2024 – May 2025</span> Diversity Recruitment Ambassador, Fairfield University — mentored newly admitted students and led outreach events.</li>
       <li><span class="t-date">Apr – Dec 2025</span> New Student Leader, Office of Student Engagement — mentored 20 first-year students, taught the First Year Experience course.</li>
@@ -111,7 +148,7 @@
   </section>
 
   <section id="skills" class="section">
-    <h2>Skills</h2>
+    <p class="section-label">04 — Skills</p>
     <div class="tags">
       <span class="tag">Swift</span>
       <span class="tag">SwiftUI</span>
@@ -134,7 +171,7 @@
   </section>
 
   <section id="activity" class="section">
-    <h2>Recent GitHub Activity</h2>
+    <p class="section-label">05 — Recent GitHub Activity</p>
     <p class="section-sub">Pulled live from the GitHub API — always current.</p>
     <ul id="repo-list" class="repo-list">
       <li class="repo-loading">Loading recent repositories…</li>
@@ -142,8 +179,8 @@
   </section>
 
   <section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Always open to internship opportunities and interesting projects.</p>
+    <p class="section-label">06 — Contact</p>
+    <p class="section-lead">Always open to internship opportunities and interesting projects.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:isabelamaria.arteaga@gmail.com">isabelamaria.arteaga@gmail.com</a>
       <a class="btn" href="https://github.com/isabela256" target="_blank" rel="noopener">github.com/isabela256</a>
