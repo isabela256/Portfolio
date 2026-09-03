@@ -2,26 +2,21 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const GITHUB_USERNAME = "isabela256";
 
-// --- Theme toggle ---
-const root = document.documentElement;
-const toggleBtn = document.getElementById("theme-toggle");
-
-function applyTheme(theme) {
-  root.setAttribute("data-theme", theme);
-  toggleBtn.textContent = theme === "dark" ? "☀️" : "🌙";
+// --- Navbar scroll state ---
+const navbar = document.getElementById("navbar");
+function onScroll() {
+  navbar.classList.toggle("scrolled", window.scrollY > 8);
 }
+document.addEventListener("scroll", onScroll, { passive: true });
+onScroll();
 
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme) {
-  applyTheme(savedTheme);
-} else {
-  applyTheme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-}
-
-toggleBtn.addEventListener("click", () => {
-  const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  applyTheme(next);
-  localStorage.setItem("theme", next);
+// --- Cursor-tracked glow on project cards ---
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener("mousemove", (e) => {
+    const rect = card.getBoundingClientRect();
+    card.style.setProperty("--x", `${e.clientX - rect.left}px`);
+    card.style.setProperty("--y", `${e.clientY - rect.top}px`);
+  });
 });
 
 // --- Live GitHub activity ---
