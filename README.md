@@ -2,7 +2,7 @@
 
 Personal portfolio site, published via GitHub Pages.
 
-Live at: https://isabela256.github.io/portfolio-/ (once Pages is enabled — see below)
+Live at: https://isabela256.github.io/portfolio-/
 
 ## Structure
 
