@@ -2,7 +2,7 @@
 
 Personal portfolio site, published via GitHub Pages.
 
-Live at: https://isabela256.github.io/portfolio-/
+Live at: https://isabela256.github.io/Portfolio/
 
 ## Structure
 
@@ -18,7 +18,7 @@ automatically once GitHub Pages is enabled.
 1. Go to this repo's **Settings → Pages**.
 2. Under **Build and deployment → Source**, choose **Deploy from a branch**.
 3. Branch: `main`, folder: `/ (root)`. Save.
-4. The site will be live at `https://isabela256.github.io/portfolio-/` within a minute or two.
+4. The site will be live at `https://isabela256.github.io/Portfolio/` within a minute or two.
 
 ## Updating content
 
